@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("Background\ image.png");
+    background-size: cover;
+    margin: 0;
+}
+
+#game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pump {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.balloon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+.small-image {
+    width: 50%;  /* Adjust size of the small image */
+    height: 50%;
+}
+
+.hidden {
+    display: none;
+}
